@@ -858,11 +858,12 @@ html {
 }
 
 .profile-img {
-    width: 100%;
-    height: 100%;
+    width: 200px;       /* ou width: 150px; */
+    height: 200px;      /* même valeur pour garder un carré */
     object-fit: cover;
     border-radius: 50%;
     display: block;
+    margin: 0 auto;     /* pour centrer horizontalement */
 }
 
 /* Modal Styles */
