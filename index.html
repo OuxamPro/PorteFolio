@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxime Quesnel - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">MQ</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#projects" class="nav-link">Projets</a></li>
+                <li><a href="#skills" class="nav-link">Compétences</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Accueil -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="profile-pic">
+                    <img src="me.jpg" alt="Photo de Maxime Quesnel" class="profile-img" />
+                </div>
+            </div>
+            <div class="hero-right">
+                <h1>Maxime Quesnel</h1>
+                <h2>Étudiant en 2ème année de Bachelor Informatique</h2>
+                <p class="hero-desc">
+                    Étudiant en Bachelor Informatique passionné par les nouvelles technologies. Je suis à la recherche d'une alternance pour septembre 2025 dans les domaines du développement, du réseau ou du support IT.
+                </p>
+                <div class="hero-btns">
+                    <a href="#contact" class="btn btn-primary">Me contacter</a>
+                    <a href="#projects" class="btn btn-outline">Voir mes projets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-content">
+            <div class="about-left card">
+                <h3>Qui suis-je ?</h3>
+                <p>Je m'appelle Maxime Quesnel, j'ai 21 ans et je suis originaire de Grenoble, en région Auvergne–Rhône-Alpes. Actuellement en 2ème année de Bachelor Informatique, je suis passionné par les technologies et l'innovation numérique.</p>
+                <p>Mon parcours académique m'a permis d'acquérir des compétences solides en développement, en gestion de bases de données, en conception de projets informatiques et en Cybersécurité. Je suis à la recherche d'une alternance pour la rentrée 2025 afin de mettre en pratique mes connaissances et développer mon expertise professionnelle.</p>
+            </div>
+            <div class="about-right card">
+                <h3>Mes qualités</h3>
+                <ul class="qualities-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <b>Rigueur</b><br><span>J'accorde une grande importance à la précision et à la qualité de mon travail.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <b>Autonomie</b><br><span>Capable de prendre des initiatives et de gérer mes projets de manière indépendante.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <b>Logique</b><br><span>J'aborde les problèmes avec une pensée analytique et structurée.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <b>Esprit d'équipe</b><br><span>J'apprécie collaborer et partager des idées pour atteindre des objectifs communs.</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i> <b>Gestion du temps</b><br><span>Je sais organiser mon travail efficacement pour respecter les délais.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Mes projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-card-top">
+                    <div class="project-icon"><i class="fa-solid fa-plus"></i></div>
+                </div>
+                <div class="project-card-bottom">
+                    <h3>TitiktakaToe NBA</h3>
+                    <div class="project-tags">
+                        <span class="tag tag-html">HTML/CSS</span>
+                        <span class="tag tag-js">JavaScript</span>
+                        <span class="tag tag-php">PHP</span>
+                        <span class="tag tag-sql">MySQL</span>
+                    </div>
+                    <p>Morpion interactif lié à la NBA avec des fonctionnalités avancées comme l'auto-complétion, la validation de noms, la gestion de score et les tours de jeu.</p>
+                    <a href="#" class="btn btn-project">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-top">
+                    <div class="project-icon"><i class="fa-solid fa-circle-play"></i></div>
+                </div>
+                <div class="project-card-bottom">
+                    <h3>Dodge Ball</h3>
+                    <div class="project-tags">
+                        <span class="tag tag-c">C</span>
+                        <span class="tag tag-sdl">SDL2</span>
+                        <span class="tag tag-sql">MySQL</span>
+                    </div>
+                    <p>Jeu de survie développé en C avec SDL2, comprenant un menu, plusieurs niveaux, des sons, des animations et une base de données pour le classement des joueurs.</p>
+                    <a href="#" class="btn btn-project">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">Mes compétences</h2>
+        <div class="skills-cards">
+            <div class="skill-card">
+                <div class="skill-card-title"><i class="fa-solid fa-database"></i> Back-End</div>
+                <div class="skill-tags">
+                    <span class="tag">C</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">PHP</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title"><i class="fa-solid fa-laptop-code"></i> Front-End</div>
+                <div class="skill-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title"><i class="fa-solid fa-toolbox"></i> Outils</div>
+                <div class="skill-tags">
+                    <span class="tag">Git/GitHub</span>
+                    <span class="tag">SDL2</span>
+                    <span class="tag">MariaDB</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-card-title"><i class="fa-solid fa-circle-plus"></i> Autres</div>
+                <div class="skill-tags">
+                    <span class="tag">Gestion de projet</span>
+                    <span class="tag">API REST</span>
+                    <span class="tag">Data mining/IA</span>
+                    <span class="tag">RGPD</span>
+                    <span class="tag">Linux/Windows</span>
+                    <span class="tag">Anglais B1/B2</span>
+                    <span class="tag">Cybersécurité</span>
+                </div>
+            </div>
+        </div>
+        <div class="skills-bars">
+            <h3>Niveau de maîtrise</h3>
+            <div class="bars-columns">
+                <div class="bars-col">
+                    <div class="bar-row">
+                        <div class="bar-label">Git/GitHub</div>
+                        <div class="bar-track"><div class="bar-fill" style="width:90%"></div></div>
+                        <span class="bar-pct">90%</span>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">HTML/CSS</div>
+                        <div class="bar-track"><div class="bar-fill" style="width:85%"></div></div>
+                        <span class="bar-pct">85%</span>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">SQL</div>
+                        <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+                        <span class="bar-pct">80%</span>
+                    </div>
+                </div>
+                <div class="bars-col">
+                    <div class="bar-row">
+                        <div class="bar-label">PHP</div>
+                        <div class="bar-track"><div class="bar-fill" style="width:80%"></div></div>
+                        <span class="bar-pct">80%</span>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">JavaScript</div>
+                        <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+                        <span class="bar-pct">70%</span>
+                    </div>
+                    <div class="bar-row">
+                        <div class="bar-label">C</div>
+                        <div class="bar-track"><div class="bar-fill" style="width:70%"></div></div>
+                        <span class="bar-pct">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Me contacter</h2>
+        <div class="contact-content">
+            <div class="contact-info card">
+                <h3>Informations de contact</h3>
+                <ul class="contact-list">
+                    <li><i class="fa-solid fa-envelope"></i> <span>Email</span><br><a href="mailto:maximequesnel03@gmail.com">maximequesnel03@gmail.com</a></li>
+                    <li><i class="fa-solid fa-phone"></i> <span>Téléphone</span><br>07 87 88 03 74</li>
+                    <li><i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span><br><a href="https://www.linkedin.com/in/maxime-quesnel190703" target="_blank">maxime-quesnel190703</a></li>
+                    <li><i class="fa-brands fa-github"></i> <span>GitHub</span><br><a href="https://github.com/OuxamPro" target="_blank">OuxamPro</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> <span>Région</span><br>Grenoble, Auvergne–Rhône-Alpes, France</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Maxime Quesnel. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
