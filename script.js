@@ -242,4 +242,112 @@ Array.from(document.querySelectorAll('.contact-list i')).forEach(icon => {
         icon.style.transform = '';
         icon.style.color = '';
     });
-}); 
+});
+
+// FONCTIONS SIMPLES POUR LA MODAL
+function openTiktaktoeModal() {
+    var modal = document.getElementById('projectModal');
+    var title = document.getElementById('modalTitle');
+    var content = document.getElementById('modalContent');
+    
+    title.textContent = 'TitiktakaToe NBA';
+    content.innerHTML = `
+        <p><strong>Dans le cadre de mon projet Annuel de fin de 1ère année de Bachelor.</strong></p>
+        <h3>Ce que j'ai fait :</h3>
+        <ul>
+            <li>Création d'un morpion interactif où les joueurs doivent entrer le nom d'un joueur NBA selon son pays et son club</li>
+            <li>Mise en place d'une validation des noms via une base de données contenant des joueurs professionnels</li>
+            <li>Gestion du changement de joueur à chaque tour, affichage du score et détection de la victoire</li>
+            <li>Ajout d'un système d'autocomplétion pour aider à la saisie des noms de joueurs</li>
+        </ul>
+        <div class="modal-tools">
+            <h4>Outils / langages utilisés :</h4>
+            <ul>
+                <li>HTML / CSS : structure et mise en page du jeu</li>
+                <li>JavaScript : logique du jeu, changement de joueur, appels AJAX, affichage dynamique</li>
+                <li>PHP : requêtes vers la base de données et validation côté serveur</li>
+                <li>SQL / MySQL : stockage et recherche des noms de joueurs, clubs et pays</li>
+            </ul>
+        </div>
+    `;
+    modal.style.display = 'block';
+}
+
+function openDodgeballModal() {
+    var modal = document.getElementById('projectModal');
+    var title = document.getElementById('modalTitle');
+    var content = document.getElementById('modalContent');
+    
+    title.textContent = 'Dodge Ball';
+    content.innerHTML = `
+        <p><strong>Dans le cadre d'un projet Semestriel de ma 2ème année de Bachelor</strong></p>
+        <h3>Ce que j'ai fait :</h3>
+        <ul>
+            <li>Menu principal avec sélection de personnage</li>
+            <li>Trois niveaux de difficulté (Facile, Intermédiaire, Difficile)</li>
+            <li>Tutoriel interactif expliquant les contrôles</li>
+            <li>Système de score avec classement par difficulté</li>
+            <li>Menu de pause pendant le jeu</li>
+            <li>Animations et effets visuels</li>
+            <li>Gestion du son et de la musique</li>
+            <li>Interface utilisateur intuitive</li>
+        </ul>
+        <div class="modal-tools">
+            <h4>Outils / langages utilisés :</h4>
+            <ul>
+                <li>Language C avec SDL2</li>
+                <li>SDL2_image</li>
+                <li>SDL2_ttf</li>
+                <li>SDL2_mixer</li>
+                <li>Base de données : MySQL/MariaDB</li>
+            </ul>
+        </div>
+    `;
+    modal.style.display = 'block';
+}
+
+function openTinderworkModal() {
+    var modal = document.getElementById('projectModal');
+    var title = document.getElementById('modalTitle');
+    var content = document.getElementById('modalContent');
+    
+    title.textContent = 'TinderWork';
+    content.innerHTML = `
+        <p><strong>Projet annuel pour ma deuxième année de bachelors</strong></p>
+        <p>Le projet est une application web complète qui reproduit le concept de Tinder mais appliqué au recrutement professionnel, permettant aux candidats de découvrir des offres d'emploi de manière interactive et aux recruteurs de trouver des talents correspondants.</p>
+        <h3>Ce que j'ai fait :</h3>
+        <ul>
+            <li>Système de swipe : Les candidats peuvent swiper (like/dislike) sur des offres d'emploi, similaire à Tinder</li>
+            <li>Gestion des profils : Les utilisateurs peuvent créer et modifier leurs profils (candidats et recruteurs)</li>
+            <li>Publication d'offres : Les recruteurs peuvent publier des offres d'emploi avec descriptions, salaires, localisation</li>
+            <li>Système de matching : Quand un candidat like une offre et que le recruteur accepte, un match est créé</li>
+            <li>Gestion des compétences : Système de compétences avec niveaux (débutant, intermédiaire, avancé, expert)</li>
+            <li>Authentification : Système de connexion/inscription avec rôles (candidat/recruteur)</li>
+            <li>Dashboard : Interface pour gérer ses offres (recruteurs) ou voir ses matchs (candidats)</li>
+        </ul>
+        <div class="modal-tools">
+            <h4>Outils / langages utilisés :</h4>
+            <ul>
+                <li>Frontend : React.js, JavaScript, HTML, CSS, Bootstrap</li>
+                <li>Backend : PHP, MySQL</li>
+                <li>Base de données : MySQL avec tables pour utilisateurs, offres, matchs, compétences</li>
+                <li>Outils : Axios pour les requêtes HTTP, React Router pour la navigation</li>
+                <li>Serveur : XAMPP (Apache + MySQL + PHP)</li>
+                <li>Gestion de dépendances : npm/package.json</li>
+            </ul>
+        </div>
+    `;
+    modal.style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('projectModal').style.display = 'none';
+}
+
+// Fermer la modal en cliquant en dehors
+window.onclick = function(event) {
+    var modal = document.getElementById('projectModal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+} 

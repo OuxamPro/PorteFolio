@@ -86,7 +86,7 @@
                         <span class="tag tag-sql">MySQL</span>
                     </div>
                     <p>Morpion interactif lié à la NBA avec des fonctionnalités avancées comme l'auto-complétion, la validation de noms, la gestion de score et les tours de jeu.</p>
-                    <a href="#" class="btn btn-project">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="btn btn-project" onclick="openTiktaktoeModal()">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="project-card">
@@ -101,7 +101,23 @@
                         <span class="tag tag-sql">MySQL</span>
                     </div>
                     <p>Jeu de survie développé en C avec SDL2, comprenant un menu, plusieurs niveaux, des sons, des animations et une base de données pour le classement des joueurs.</p>
-                    <a href="#" class="btn btn-project">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+                    <a class="btn btn-project" onclick="openDodgeballModal()">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-card-top">
+                    <div class="project-icon"><i class="fa-solid fa-heart"></i></div>
+                </div>
+                <div class="project-card-bottom">
+                    <h3>TinderWork</h3>
+                    <div class="project-tags">
+                        <span class="tag tag-html">React.js</span>
+                        <span class="tag tag-js">JavaScript</span>
+                        <span class="tag tag-php">PHP</span>
+                        <span class="tag tag-sql">MySQL</span>
+                    </div>
+                    <p>Plateforme de matching entre candidats et offres d'emploi inspirée de Tinder, avec système de swipe, gestion de profils, publication d'offres et système de matching intelligent.</p>
+                    <a class="btn btn-project" onclick="openTinderworkModal()">Voir détails <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -252,6 +268,19 @@
             <p>&copy; 2024 Maxime Quesnel. Tous droits réservés.</p>
         </div>
     </footer>
+
+    <!-- Modal pour les détails des projets -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <span class="close" onclick="closeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="modalContent"></div>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
